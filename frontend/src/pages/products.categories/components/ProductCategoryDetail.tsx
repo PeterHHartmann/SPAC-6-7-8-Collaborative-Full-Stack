@@ -5,18 +5,18 @@ import type { ColumnDef } from '@tanstack/react-table';
 
 export const ProductCategoryDetail: React.FC = () => {
 
-    const columns: ColumnDef<ProductCategory>[] = [
-        {
-            header: "Id",
-            accessorKey: "categoryId"
-        },
-        {
-            header: "Name",
-            accessorKey: "categoryName"
-        }
-    ];
+	const columns: ColumnDef<ProductCategory>[] = [
+		{
+			header: "Id",
+			accessorKey: "categoryId"
+		},
+		{
+			header: "Name",
+			accessorKey: "categoryName"
+		}
+	];
 
-    return (
-        <DetailView dataName="product category" query={useProductCategory} columns={columns} />
-    );
+	return (
+		<DetailView tableTitle='Product Category' dataName="product category" query={useProductCategory} columns={columns} />
+	);
 };
