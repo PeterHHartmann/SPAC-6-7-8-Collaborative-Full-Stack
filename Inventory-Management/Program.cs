@@ -32,8 +32,6 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Configuration.AddEnvironmentVariables();
 
-Console.WriteLine(builder.Configuration.GetConnectionString("DefaultConnection"));
-
 var AllowSpecificOrigins = "AllowFrontendOrigin";
 builder.Services.AddCors(o => o.AddPolicy(AllowSpecificOrigins, builder =>
 {
