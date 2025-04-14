@@ -1,3 +1,19 @@
+using Inventory_Management;
+using Inventory_Management.Context;
+using Inventory_Management.Factories;
+using Inventory_Management.Helpers;
+using Inventory_Management.Interfaces;
+using Inventory_Management.Managers;
+using Inventory_Management.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Text;
+
+DotEnv.Load(Path.Combine(Directory.GetCurrentDirectory(), "../.env"));
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSwaggerGen(c =>
@@ -114,6 +130,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
