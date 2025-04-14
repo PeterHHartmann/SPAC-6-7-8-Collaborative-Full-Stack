@@ -15,7 +15,7 @@ namespace Inventory_Management
 
             var mappings = new Dictionary<string, string>
             {
-				{ "DB_HOST", "Server" },
+				        { "DB_HOST", "Server" },
                 { "POSTGRES_DB", "Database" },
                 { "POSTGRES_USER", "Username" },
                 { "POSTGRES_PASSWORD", "Password" }
