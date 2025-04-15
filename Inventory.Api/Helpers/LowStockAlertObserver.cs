@@ -14,7 +14,8 @@ namespace Inventory.Api.Helpers
 
 		public void OnLowQuantity(Product product)
 		{
-			_logger.LogWarning($"Low inventory alert: Product {product.ProductName} (ID: {product.ProductId}) has quantity {product.Quantity}");
+			var sanitizedProductName = product.ProductName.Replace(Environment.NewLine, "").Replace("\n", "").Replace("\r", "");
+			_logger.LogWarning($"Low inventory alert: Product {sanitizedProductName} (ID: {product.ProductId}) has quantity {product.Quantity}");
 		}
 	}
 }
