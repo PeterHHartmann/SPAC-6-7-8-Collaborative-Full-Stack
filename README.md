@@ -2,6 +2,8 @@
 This project is a solo continuation of the application developed in collaboration with __Thyge123__ and __EmilSalomonsen__ at SPAC, week 6-7.  
 The focus of this project is on containerization and continuous integration of a previously developed application.
 
+![hero image](./docs/readme-img.png?raw=true "")
+
 ## Disclaimer
 This project is in no way meant to be production ready or deployed. It is merely an exercise in dockerization and CI.
 
