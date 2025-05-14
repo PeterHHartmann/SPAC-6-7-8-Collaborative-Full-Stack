@@ -1,4 +1,4 @@
-# SPAC - Week 8 - Inventory-Management
+# SPAC - Week 6, 7 & 8 - Inventory-Management
 This project is a solo continuation of the application developed in collaboration with __Thyge123__ and __EmilSalomonsen__ at SPAC, week 6-7.  
 The focus of this project is on containerization and continuous integration of a previously developed application.
 
